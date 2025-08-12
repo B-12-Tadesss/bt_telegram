@@ -1,5 +1,5 @@
 
- from telegram import Update
+ telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 import os
 TOKEN = "8403807471:AAErWg9g02UMYmVzprOwtDM59n0uMTUG6vU"
@@ -18,6 +18,7 @@ app.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, welcome))
 
 print("🤖 Bot is running...")
 app.run_polling()
+
 
 
 

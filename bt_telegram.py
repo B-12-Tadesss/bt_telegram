@@ -1,6 +1,6 @@
 
-from telegram import Update
-from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
+ telegram import Update
+ telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
 TOKEN = "8403807471:AAErWg9g02UMYmVzprOwtDM59n0uMTUG6vU"
 YOUTUBE_LINK = "https://www.youtube.com/channel/UCeoAVGtOmr6w1AE-WFxXZhw"  # Replace with your channel or video link
@@ -18,4 +18,5 @@ app.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, welcome))
 
 print("🤖 Bot is running...")
 app.run_polling()
+
 
